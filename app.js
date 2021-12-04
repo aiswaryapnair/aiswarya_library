@@ -11,7 +11,7 @@ const cors=require('cors');
 var bodyParser  = require('body-parser');
 var jwt=require('jsonwebtoken');
 var app=new express();
-app.use(express.static('./public'));
+// app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({
     extended: true
   }));
