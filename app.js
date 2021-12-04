@@ -6,7 +6,7 @@ const multer = require('multer');
 var fs = require('fs');
 const port=process.env.PORT || 3000;
 const path=require('path');
-app.use(express.static('./dist/frontend'));
+
 const cors=require('cors');
 var bodyParser  = require('body-parser');
 var jwt=require('jsonwebtoken');
@@ -15,6 +15,7 @@ var app=new express();
 app.use(bodyParser.urlencoded({
     extended: true
   }));
+  app.use(express.static('./dist/frontend'));
 
 app.use(bodyParser.json())
 app.use(cors());
