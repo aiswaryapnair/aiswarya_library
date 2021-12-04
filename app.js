@@ -10,7 +10,6 @@ app.use(express.static('./dist/frontend'));
 const cors=require('cors');
 var bodyParser  = require('body-parser');
 var jwt=require('jsonwebtoken');
-const { title } = require('process');
 var app=new express();
 app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({
